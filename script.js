@@ -26,9 +26,9 @@
   var shareBtn = document.getElementById('shareBtn');
   if (shareBtn) {
     shareBtn.addEventListener('click', function () {
-      var url = 'https://kenchoi.xyz';
+      var url = 'https://kenicken.com';
       if (navigator.share) {
-        navigator.share({ title: 'kenchoi.xyz', url: url }).catch(function () {});
+        navigator.share({ title: 'kenicken.com', url: url }).catch(function () {});
       } else if (navigator.clipboard) {
         navigator.clipboard.writeText(url).then(function () {
           showToast('링크가 복사되었어요!');
@@ -209,7 +209,7 @@
 
   /* ---- Variable font weight wave animation ---- */
   function initVarAnim(el) {
-    var text = el.textContent || 'kenchoi.xyz';
+    var text = el.textContent || 'kenicken.com';
     el.textContent = '';
     text.split('').forEach(function (ch) {
       var s = document.createElement('span');
